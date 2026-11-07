@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090817">
+  <title>Sarkas YouTube Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">S</span><span>SARKAS<span class="brand-sub">MEDIA LAB</span></span></a>
+    <span class="status"><i></i> SYSTEM ONLINE</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span></span> YOUR MEDIA • YOUR CONTROL</div>
+      <h1>SARKAS <span>YOUTUBE</span><br>DOWNLOADER<span class="dot">.</span></h1>
+      <p class="hero-copy">Simpan media yang memang menjadi milikmu atau yang penggunaannya telah diizinkan. Cepat, simpel, dan bergaya neon.</p>
+
+      <section class="panel">
+        <div class="panel-heading"><div><span class="mini-label">01 / SOURCE</span><h2>Masukkan video URL</h2></div><span class="link-icon">↗</span></div>
+        <div class="url-row">
+          <div class="url-input-wrap"><span class="chain">⌁</span><input id="videoUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off"><button id="pasteBtn" class="paste-btn" type="button">PASTE</button></div>
+          <button id="fetchBtn" class="primary-btn" type="button"><span>FETCH VIDEO</span><b>→</b></button>
+        </div>
+        <p class="hint">Tempel link YouTube lalu tekan Fetch Video untuk melihat informasi.</p>
+        <div id="errorBox" class="error-box" role="alert"></div>
+
+        <article id="resultCard" class="result-card hidden">
+          <div class="preview"><img id="thumbnail" alt="Thumbnail video"><span class="preview-tag">PREVIEW</span></div>
+          <div class="video-details"><span class="mini-label">VIDEO DETECTED</span><h3 id="videoTitle">Video title</h3><div class="meta"><span id="uploader">Creator</span><span>•</span><span id="duration">00:00</span></div></div>
+          <div class="divider"></div>
+          <div class="download-controls">
+            <div class="format-tabs"><button class="format-tab active" data-format="mp4">MP4 VIDEO</button><button class="format-tab" data-format="mp3">MP3 AUDIO</button></div>
+            <label class="quality-label" for="qualitySelect">QUALITY</label>
+            <select id="qualitySelect"><option value="360">MP4 · 360p</option><option value="720" selected>MP4 · 720p</option><option value="1080">MP4 · 1080p</option></select>
+            <button id="downloadBtn" class="download-btn" type="button">↓ &nbsp; DOWNLOAD NOW</button>
+          </div>
+        </article>
+
+        <div id="progressWrap" class="progress-wrap hidden"><div class="progress-top"><span id="progressText">Preparing your file...</span><span id="progressPercent">0%</span></div><div class="progress-track"><div id="progressBar"></div></div></div>
+      </section>
+      <div class="feature-row"><div><b>✦</b><span>NEON INTERFACE</span></div><div><b>◈</b><span>RESPONSIVE DESIGN</span></div><div><b>⌁</b><span>FAST METADATA</span></div></div>
+    </section>
+    <footer><span>© 2026 SARKAS MEDIA LAB</span><span>BUILT FOR THE NIGHT OWLS <b>✦</b></span></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

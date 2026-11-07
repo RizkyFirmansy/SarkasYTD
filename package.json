@@ -1,0 +1,9 @@
+{
+  "name": "sarkas-youtube-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sarkas YouTube Downloader - neon anime aesthetic demo",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": { "express": "^4.21.2", "helmet": "^8.0.0", "express-rate-limit": "^7.5.0" }
+}
